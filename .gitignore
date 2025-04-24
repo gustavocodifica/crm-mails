@@ -1,0 +1,9 @@
+# build
+dist
+.vercel
+
+# dependencies
+node_modules
+
+## env file
+.env
