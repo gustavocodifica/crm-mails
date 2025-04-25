@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "tsx watch src/http/server.ts",
     "build": "tsup src",
-    "start": "node dist/http/server.js"
+    "start": "node dist/http/server.js",
+    "format": "prettier --write src"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^22.14.1",
+    "prettier": "^3.5.3",
     "tsup": "^8.4.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
