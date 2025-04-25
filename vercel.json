@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "crons": [
+    {
+      "path": "/api/cron/emails",
+      "schedule": "00 6 * * *"
+    }
+  ],
+  "builds": [
+    {
+      "src": "./dist/http/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/http/server.js"
+    }
+  ]
+}

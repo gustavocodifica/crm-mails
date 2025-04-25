@@ -5,11 +5,11 @@ import {
   validatorCompiler,
 } from "fastify-type-provider-zod";
 
-import { contractorRoutes } from "./controllers/contractors";
+import { cronEmailsRoute } from "./routes/cron-emails";
 
 export const app = fastify();
 
 app.setSerializerCompiler(serializerCompiler);
 app.setValidatorCompiler(validatorCompiler);
 
-app.register(contractorRoutes);
+app.register(cronEmailsRoute);
