@@ -4,4 +4,5 @@ export interface Contractor {
   email: string
   responsibleName: string
   joinDate: string
+  subscriptionId: string | null
 }

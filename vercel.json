@@ -3,7 +3,7 @@
   "crons": [
     {
       "path": "/api/cron/emails",
-      "schedule": "00 6 * * *"
+      "schedule": "00 9 * * *"
     }
   ],
   "builds": [
